@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ulo.wallet">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".UloApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_eulo_name"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".ui.initial.InitialActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.initial.SplashActivity"
+            android:theme="@style/SplashActivityTheme" />
+        <activity android:name=".utils.scanner.ScanActivity" />
+        <activity android:name=".ui.main.AddContactActivity" />
+        <activity android:name=".ui.transaction.TransactionDetailActivity" />
+        <activity android:name=".ui.inputs.InputsDetailActivity" />
+        <activity android:name=".ui.initial.TutorialActivity" />
+        <activity android:name=".ui.pincode.MnemonicActivity" />
+        <activity android:name=".ui.initial.StartActivity" />
+        <activity android:name=".ui.pincode.PincodeActivity" />
+        <activity android:name=".ui.main.WalletActivity" android:launchMode="singleTask"/>
+        <activity android:name=".ui.main.QrActivity" />
+        <activity android:name=".ui.transaction.SendActivity"  android:launchMode="singleTask"/>
+        <activity android:name=".ui.restore.RestoreWordsActivity" />
+        <activity android:name=".ui.restore.RestoreActivity" />
+        <activity android:name=".ui.contacts.ContactsActivity" android:launchMode="singleTask"/>
+        <activity android:name=".ui.contacts.AddContactActivity" />
+        <activity android:name=".ui.main.RequestActivity" />
+        <!--<activity android:name=".utils.scanner.OptionsScannerActivity" />-->
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".ui.settings.StartNodeActivity" />
+        <activity android:name=".ui.settings.SettingsPincodeActivity" />
+    </application>
+</manifest>

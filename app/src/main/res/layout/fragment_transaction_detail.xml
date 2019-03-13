@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/container_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/transaction_hash"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_transaction_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="@string/transaction_hash"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tx_detail_amount"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="36 PIV"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/title_date"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="13 Mar 2017"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/container_confirmations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/txt_detail_confirmations"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_confirmations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="45"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tx_detail_addresses"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_outputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="8dp"
+                android:text="@string/title_description"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="@string/add_memo"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/title_fee"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="@string/title_fee"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/title_tx_weight"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_tx_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:text="Bytes"
+                android:textColor="@color/mainText"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tx_detail_inputs_title"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/transaction_inputs"
+                android:padding="8dp"
+                android:textColor="@color/mainText"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/tx_detail_inputs" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

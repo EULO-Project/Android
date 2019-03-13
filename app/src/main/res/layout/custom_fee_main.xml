@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <fragment
+        android:id="@+id/fragment_custom_fee"
+        android:name="eulo.org.wallet.ui.transaction_send_activity.custom.CustomFeeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_button"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/button_ok"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

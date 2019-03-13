@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/restoreMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/restore_wallet_message"
+        android:textColor="@color/mainText"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner_files"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/restoreMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_settings_input_top"
+        android:drawableRight="@mipmap/ic_add_file"
+        android:elevation="2dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:prompt="@string/select_file"
+        android:stateListAnimator="@null"
+        android:text="@string/select_file"
+        android:textColor="@color/mainText"
+        android:textSize="14sp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_files"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_settings_input_bottom"
+        app:hintEnabled="false"
+        app:passwordToggleDrawable="@drawable/ic_view_white"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/string_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="@color/mainText"
+            android:textColorHint="@color/hintInput"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/passwordLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_restore"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_button"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:text="@string/restore_wallet"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:translationZ="2dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

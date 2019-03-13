@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+
+    <TextView
+        style="@style/Subtitles"
+        android:text="@string/host" />
+
+    <EditText
+        android:id="@+id/hostText"
+        style="@style/Inputs"
+        android:hint="@string/hint_host"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        style="@style/Subtitles"
+        android:text="@string/tcp_port" />
+
+    <EditText
+        android:id="@+id/tcpText"
+        style="@style/Inputs"
+        android:hint="@string/hint_tcp_port"
+        android:inputType="number"
+        android:maxLength="10"
+        android:text="" />
+
+    <TextView
+        style="@style/Subtitles"
+        android:text="@string/ssl_port"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/sslText"
+        style="@style/Inputs"
+        android:hint="@string/hint_ssl_port"
+        android:inputType="number"
+        android:text=""
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/restoreMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/explanation_import_xpub"
+        android:textColor="@color/mainText"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_xpub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_settings_input_bottom"
+        android:hint="@string/hint_paste_xpub"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/hintInput"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/check_bip32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="BIP32 wallet" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/passwordLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_import"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_button"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:text="@string/import_xpub"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:translationZ="2dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

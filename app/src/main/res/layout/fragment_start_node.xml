@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/nodeMessage"
+        style="@style/MessageTextStart"
+        android:paddingTop="40dp"
+        android:text="@string/node_selection_message"
+        android:textColor="#FF333333" />
+
+
+    <LinearLayout
+        android:id="@+id/spinner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nodeMessage"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="60dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:popupBackground="#ffffff"
+            android:prompt="@string/select" />
+
+        <Button
+            android:id="@+id/openDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:elevation="0dp"
+            android:paddingTop="20dp"
+            android:text="@string/btn_select_node"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:elevation="0dp"
+            android:paddingTop="20dp"
+            android:text="@string/node_default"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSelectNode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_button"
+        android:elevation="2dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:stateListAnimator="@null"
+        android:text="@string/select_node"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:translationZ="2dp" />
+
+</RelativeLayout>
